@@ -116,21 +116,21 @@
                     <div class="btn-group-left">
                       <button
                         class="btn btn-custom btn-custom-mode tooltip-button active"
-                        id="btnD"
+                        id="btnD" onclick="document.getElementById('third-tooltip').style.display = 'none'"
                       >
                         Y
                         <div class="tooltip">Yesterday</div>
                       </button>
                       <button
                         class="btn btn-custom btn-custom-mode tooltip-button"
-                        id="btnW"
+                        id="btnW" onclick="document.getElementById('third-tooltip').style.display = 'none'"
                       >
-                        W
-                        <div class="tooltip">Last week</div>
+                      M
+                        <div class="tooltip">Last month</div>
                       </button>
                       <button
                         class="btn btn-custom btn-custom-mode tooltip-button"
-                        id="btnM"
+                        id="btnM" onclick="document.getElementById('third-tooltip').style.display = 'block'"
                       >
                         6M
                         <div class="tooltip">Last 6 months</div>
@@ -209,7 +209,7 @@
               <h2 class="card-title">Visits over time</h2><span
               class="tooltip-new"
               id="third-tooltip"
-              data-tooltip="30-day average shown (6-month data unavailable)"
+              data-tooltip="30-day average shown (6-month data unavailable)" style="display: none;"
               >?</span
             ></div>
               <p class="card-text" id="visits-text">
