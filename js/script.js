@@ -37,7 +37,6 @@ pageElements.closeIcon.addEventListener("click", function () {
 });
 
 const countryMapping = {
-    'CA': 'Canada',
     'FR': 'France',
     'PL': 'Poland',
     'BA': 'Bosnia and Herzegovina',
