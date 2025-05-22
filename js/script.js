@@ -44,7 +44,7 @@ const countryMapping = {
     'SE': 'Sweden',
     'DE': 'Germany',
     'FI': 'Finland',
-    'RO': 'Romania',
+    'RO': 'Canada',
     'ES': 'Spain',
     'SI': 'Slovenia',
     'BG': 'Bulgaria',
@@ -237,19 +237,8 @@ async function drawCharts() {
         geoDataTable.addColumn({type: 'string', role: 'tooltip', p: {html: true}});
 
         Object.entries(jsonData.totals.dist).forEach(([countryCode, data]) => {
-            let displayCountryCode = countryCode;
-
-            if (countryCode === 'RO') {
-                displayCountryCode = 'CA';
-            }
-
-            if (countryCode === 'CA') {
-                return;
-            }
-            
             const percentage = (data.clicks / totalClicks) * 100;
             geoDataTable.addRow([
-                displayCountryCode,
                 countryCode,
                 percentage,
                 `<div style="padding:0px; font-family: Arial, sans-serif; font-size: 14px; width: 60px;">
