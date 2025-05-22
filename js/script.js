@@ -44,7 +44,7 @@ const countryMapping = {
     'SE': 'Sweden',
     'DE': 'Germany',
     'FI': 'Finland',
-    'RO': 'Canada',
+    'RO': 'Romania',
     'ES': 'Spain',
     'SI': 'Slovenia',
     'BG': 'Bulgaria',
